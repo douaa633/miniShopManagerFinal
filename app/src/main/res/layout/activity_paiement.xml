@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EAF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💳 Paiement"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#7E57C2"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvRecap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#4A4458"
+            android:background="@drawable/bg_item" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#7E57C2" />
+
+        <EditText
+            android:id="@+id/etNomCarte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom sur la carte"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:background="@drawable/bg_item" />
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Numéro de carte (16 chiffres)"
+            android:inputType="number"
+            android:maxLength="16"
+            android:padding="16dp"
+            android:background="@drawable/bg_item" />
+
+        <EditText
+            android:id="@+id/etCvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="CVV (3 chiffres)"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:padding="16dp"
+            android:background="@drawable/bg_item" />
+
+        <Button
+            android:id="@+id/btnPayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Payer maintenant"
+            android:backgroundTint="#9575CD"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

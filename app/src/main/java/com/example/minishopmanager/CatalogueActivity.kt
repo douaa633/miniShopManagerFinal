@@ -30,11 +30,11 @@ class CatalogueActivity : AppCompatActivity() {
             val obj = array.getJSONObject(i)
             noms.add(obj.getString("nom"))
             prix.add(obj.getInt("prix"))
-            affichage.add("${obj.getString("nom")} - ${obj.getInt("prix")} DT")
+            affichage.add("🛍️ ${obj.getString("nom")} - ${obj.getInt("prix")} DT")
         }
 
         // 3. Afficher dans la ListView
-        lvProduits.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, affichage)
+        lvProduits.adapter = ArrayAdapter(this, R.layout.item_produit, affichage)
 
         // 4. Clic sur un produit : insertion SQLite + Toast
         lvProduits.setOnItemClickListener { _, _, position, _ ->

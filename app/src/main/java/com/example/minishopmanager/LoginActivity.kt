@@ -37,7 +37,10 @@ class LoginActivity : AppCompatActivity() {
             }
             editor.apply()
 
-            startActivity(Intent(this, CatalogueActivity::class.java))
+            // Aller à l'accueil en envoyant le nom
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("USER", etUser.text.toString())
+            startActivity(intent)
             finish()
         }
     }

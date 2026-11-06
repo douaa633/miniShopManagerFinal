@@ -4,30 +4,41 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#F8EAF6">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MiniShop Manager"
-        android:textSize="24sp"
+        android:text="🛍️ MiniShop Manager"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#7E57C2"
         android:layout_marginBottom="24dp" />
 
     <EditText
         android:id="@+id/etUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nom d'utilisateur" />
+        android:hint="Nom d'utilisateur"
+        android:padding="16dp"
+        android:textColor="#4A4458"
+        android:background="@drawable/bg_item" />
 
     <CheckBox
         android:id="@+id/cbRemember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Se souvenir de moi" />
+        android:layout_marginTop="8dp"
+        android:text="Se souvenir de moi"
+        android:textColor="#4A4458" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connexion" />
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#9575CD"
+        android:text="Connexion"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
